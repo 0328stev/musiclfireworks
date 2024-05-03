@@ -60,7 +60,7 @@ let time = 0
 const MAX_PARTICLE_COUNT = 100;
 const MAX_TRAIL_COUNT = 20;
 
-var colorScheme = ["#DFCBFF", "#74DEFF", "#fff"];
+var colorScheme = ["#DFCBFF", "#66DEFF", "#fff"];
 var shaded = true;
 var theShader;
 var shaderTexture;
@@ -105,9 +105,9 @@ function draw() {
   smooth(bass)
 
 // change - update last 3 values with mapping to the range you want at what interval steps 
-  treble= map(treble, 0, 300, 1, 30, 0.5);
-  bass = map(bass, 0, 300, -900,900, 1);
-  bass2 = map(bass, 0, 300, -20,20, 1);
+  treble= map(treble, 0, 350, 1, 30, 0.5);
+  bass = map(bass, 0, 300, -900,60, 1);
+  bass2 = map(bass, 0, 300, -20,200, 1);
   bass3 = map(bass, 0, 300, 5,30, 1);
   mid = map(mid, 0, 300, 0, 30, 1);
 
